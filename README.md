@@ -4,7 +4,7 @@ NASA Earth Observation and agricultural advisory application.
 
 ## Run locally
 
-1. From the repository root, create and activate a Python virtual environment:
+1. From the repository root, create and activate a Python virtual environment (Run this only if the project doesn't already have a .venv folder):
    ```powershell
    python -m venv .venv
    .\.venv\Scripts\Activate.ps1
