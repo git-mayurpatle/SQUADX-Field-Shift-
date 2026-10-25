@@ -1,0 +1,46 @@
+{
+  "dataset": "FAOSTAT yield (kg/ha)",
+  "scope": "country/crop historical forecasts, not farm-level",
+  "training_examples": 15137,
+  "validation_examples": 1903,
+  "test_examples": 3777,
+  "validation": {
+    "random_forest": {
+      "mae_kg_ha": 619.79,
+      "rmse_kg_ha": 1555.24,
+      "r2": 0.9742
+    },
+    "last_observed_baseline": {
+      "mae_kg_ha": 548.99,
+      "rmse_kg_ha": 1392.03,
+      "r2": 0.9793
+    }
+  },
+  "test_2023_2024": {
+    "random_forest": {
+      "mae_kg_ha": 657.22,
+      "rmse_kg_ha": 2078.41,
+      "r2": 0.9555
+    },
+    "last_observed_baseline": {
+      "mae_kg_ha": 633.94,
+      "rmse_kg_ha": 2155.63,
+      "r2": 0.9521
+    }
+  },
+  "test_origin": 2022,
+  "inputs": [
+    "Area",
+    "Item",
+    "origin_year",
+    "horizon",
+    "last_yield",
+    "mean3",
+    "mean5",
+    "trend3",
+    "n_history",
+    "crop_median"
+  ],
+  "recommended_predictor": "last_observed_baseline",
+  "limitations": "No GPS, climate, soil or farm-level inputs. Testing uses historical 2022-origin forecasts; do not interpret as a validated 2026 forecast."
+}

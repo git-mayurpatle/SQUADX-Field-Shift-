@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+pandas
+joblib
+scikit-learn
+numpy
+rasterio
+pystac-client
+planetary-computer

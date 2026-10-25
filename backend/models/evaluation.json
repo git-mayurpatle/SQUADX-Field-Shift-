@@ -1,0 +1,24 @@
+{
+  "dataset": "FAOSTAT yield (kg/ha)",
+  "scope": "country-level, not field-level",
+  "training_years": "2015\u20132022",
+  "test_years": "2023\u20132024",
+  "train_rows": 15260,
+  "test_rows": 3783,
+  "ridge_model": {
+    "mae_kg_ha": 3044.8,
+    "rmse_kg_ha": 6424.32,
+    "r2": 0.5742
+  },
+  "last_observed_baseline": {
+    "mae_kg_ha": 637.43,
+    "rmse_kg_ha": 2160.24,
+    "r2": 0.9519
+  },
+  "inputs": [
+    "Area",
+    "Item",
+    "Year"
+  ],
+  "limitations": "No soil, GPS, NASA climate or farm management features in this model."
+}
